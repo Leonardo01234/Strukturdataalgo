@@ -1,9 +1,9 @@
 class Node{
 	
 	public:
-		int		value; // data value 
-		Node	*next; // pointer untuk node selanjutnya
-		Node() { //constructor: sebuah method yang dipanggil pertama kali 
+		int value; 
+		Node	*next;
+		Node() { 
 			next = NULL;
 		}
 };
