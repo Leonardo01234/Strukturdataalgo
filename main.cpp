@@ -14,6 +14,9 @@ int main(int argc, char** argv) {
 	list1.insetAfter(15,20);
 		
 	list1.insertToTail(5);
+	list1.deleteFromTail();
+	
+	list1.deleteByValue(50);
 	
 	cout << "head: " << list1.head->value << endl;
 	cout << "tail: " << list1.tail->value << endl;
