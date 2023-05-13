@@ -54,3 +54,44 @@ void LinkedList::insetAfter(int input, int data) {
     }
     cout << "Node dengan data" << data << " Tidak Ditemukan." << endl;
 }
+void LinkedList::deleteFromHead()
+{
+	Node *delNode = head;
+	head = head->next;
+	delete delNode;
+}
+void LinkedList::deleteFromTail()
+{
+	Node *tmp = head;
+	while (tmp->next->next != NULL)
+	{
+		tmp = tmp->next;
+	}
+	Node *delNode = tmp->next;
+	tail = tmp;
+	tail->next = NULL;
+	delete delNode;
+}
+void LinkedList::deleteByValue(int input)
+{
+	Node *delNode;
+	Node *tmp = head;
+	
+	if (input == head->value)
+	{
+		head = head->next;
+		delete tmp;
+		
+	}
+	else{
+		
+		while (tmp->value != input)
+		{
+			tmp = tmp->next;
+		}
+		delNode = tmp->next;
+		tmp->next     = delNode->next;
+		delNode = NULL;
+		delete delNode;
+	}
+}
