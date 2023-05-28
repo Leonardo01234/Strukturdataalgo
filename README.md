@@ -1,1 +1,3 @@
-# Strukturdataalgo berisi tugas tugas dari mata kuliah Struktur Data dan Algoritma
+NAMA : LEONARDO FRANSISKUS SITANGGANG
+NIM : 2215101007
+KELAS : A
